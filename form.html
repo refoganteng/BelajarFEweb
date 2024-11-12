@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Formulir</title>
+</head>
+<body>
+    <main>
+        <h1>Formulir</h1>
+<!-- ini form yang salah -->
+        <form action="#" method="post">
+            <p>Nama Lengkap: </p><input type="text">
+            <p>Umur :</p><input type="number">
+            <p>Email :</p><input type="email">
+            <p>Password :</p><input type="password">
+            <p>Warna Kesukaan :</p><input type="color">
+        </form>
+
+        <hr>
+<!-- ini form yang benar -->
+        <form action="#" method="post">
+            <label for="name">Nama Lengkap</label>
+            <input type="text" placeholder="Nama Lengkap" id="name">
+
+            <label for="phone">Nomor Handphone</label>
+            <input type="number" placeholder="Nomor Handphone" id="phone">
+
+            <label for="email">Email</label>
+            <input type="email" placeholder="Email" id="phone">
+
+            <label for="password">Password</label>
+            <input type="password" placeholder="Password" id="password">
+
+            <label for="color">Warna Kesukaan</label>
+            <input type="color" placeholder="Warna Kesukaan" id="color">
+        </form>
+
+    </main>
+</body>
+</html>
