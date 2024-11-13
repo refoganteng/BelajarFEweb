@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Halaman Formulir</title>
 </head>
+
 <body>
     <main>
         <h1>Formulir</h1>
@@ -19,23 +20,79 @@
 
         <hr>
 <!-- ini form yang benar -->
-        <form action="#" method="post">
-            <label for="name">Nama Lengkap</label>
-            <input type="text" placeholder="Nama Lengkap" id="name">
+        <form action="/daftar" method="get">
+            <div>
+                <label for="name">Nama Lengkap</label>
+                <input type="text" placeholder="Nama Lengkap" id="name" name="name">
+            </div>
 
-            <label for="phone">Nomor Handphone</label>
-            <input type="number" placeholder="Nomor Handphone" id="phone">
-
-            <label for="email">Email</label>
-            <input type="email" placeholder="Email" id="phone">
-
-            <label for="password">Password</label>
-            <input type="password" placeholder="Password" id="password">
-
-            <label for="color">Warna Kesukaan</label>
-            <input type="color" placeholder="Warna Kesukaan" id="color">
+            <div>
+                <label for="phone">Nomor Handphone</label>
+                <input type="number" placeholder="Nomor Handphone" id="phone" name="phone">
+            </div>
+            
+            <div>
+                <label for="email">Email</label>
+                <input type="email" placeholder="Email" id="phone" name="email">
+            </div>
+            
+            <div>
+                <label for="password">Password</label>
+                <input type="password" placeholder="Password" id="password" name="password">
+            </div>
+                        
+            <button type="submit">Submit</button>
         </form>
 
+        <hr>
+        <!-- belajar radio button dan checkbox -->
+         <h1>Pesanan</h1>
+    
+         <form action="/order">
+            <label for="">Baju</label>
+            <div>
+                <input type="radio" name="Baju" id="" value="kemeja">
+                <label for="">Kemeja</label>
+
+                <input type="radio" name="Baju" id="" value="kaos">
+                <label for="">Kaos</label> 
+            </div>
+
+            <div>
+                <label for="ukuran">Ukuran</label>
+                <select name="ukuran" id="">Ukuran
+                    <option value="S">Small</option>
+                    <option value="M">Medium</option>
+                    <option value="L">Large</option>
+                    <option value="XL">Xtra Large</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="confirm">Apakah sudah sesuai?</label>
+                <input type="checkbox" name="confirm" id="confirm" checked value="1">
+            </div>           
+
+            <div>
+                <p>
+                    <label for="notes">Catatan</label>
+                </p>
+                <textarea name="notes" id="notes" cols="20" rows="5"></textarea>
+            </div>
+
+            <button type="submit">Order</button>
+
+         </form>
+
+         <hr>
+         <!-- ini belajar Validasi Inputan -->
+
+         <h1>Validasi</h1>
+         <form action="valid">
+            <input type="text" name="catatan" minlength="3" maxlength="8"> 
+            <input type="number" name="nomor" min="2" max="5">  
+            <button type="submit">Kirim</button>   
+         </form>
     </main>
 </body>
 </html>
