@@ -1,5 +1,5 @@
 * {
-    background-color: cyan;
+    background-color: whitesmoke;
 }
 
 /* h1 {
@@ -20,9 +20,13 @@ h1,h2,h3 {
 }
 
 span {
-    color: yellow;
+    color: rgb(122, 16, 51);
 }
 
 #kegiatan2 {
     color: blue;
+}
+
+.penting {
+    background-color: aqua;
 }
