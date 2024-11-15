@@ -1,0 +1,28 @@
+* {
+    background-color: cyan;
+}
+
+/* h1 {
+    color: aliceblue;
+}
+
+h2 {
+    color: aliceblue;
+}
+
+h3 {
+    color: aliceblue;
+} */
+
+h1,h2,h3 {
+    color: aliceblue;
+    background-color: black;
+}
+
+span {
+    color: yellow;
+}
+
+#kegiatan2 {
+    color: blue;
+}

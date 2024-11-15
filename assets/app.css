@@ -1,4 +1,36 @@
 h1 {
     color: rebeccapurple;
-    font-size: larger;
+    text-align: center;
+    font-weight: bolder;
+    font-family: monospace;
+    text-decoration: none;
+    font-size: 200%;
+}
+
+h2 {
+    color: goldenrod;
+    text-align: start;
+}
+
+h3 {
+    color: green;
+    text-align: start;
+}
+
+button {
+    background-color: coral;
+    color: black;
+}
+
+p {
+    background-color: aquamarine;
+    color: darkred;
+    text-align: justify;
+    letter-spacing: normal;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+    color: blueviolet;
 }
