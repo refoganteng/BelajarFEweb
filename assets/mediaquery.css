@@ -1,0 +1,31 @@
+body {
+   font-family: 'calibri', sans-serif;
+}
+
+h1 {
+   font-size: 3em;
+   text-align: center;
+   color: rebeccapurple;
+}
+
+nav {
+   font-size: 1.5em;
+}
+
+ul, li {
+   display: inline;
+   margin: 0;
+   padding: 0;
+}
+
+/* @media (width: 499px) {
+   h1 {
+      color: aqua;
+   }
+} */
+
+@media screen and (min-width: 900px) {
+   h1 {
+      color: turquoise;
+   }
+}
