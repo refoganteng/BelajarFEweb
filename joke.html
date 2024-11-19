@@ -5,45 +5,109 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Joke Page</title>
     <style>
-        *{
-            background-color: antiquewhite;
-        }
-        .jokes p {
-            font-size: 16px;
+        
+        .jokes > p {
             color: blueviolet;
+        }
+
+        .jokes > p:hover {
+            cursor: pointer;
+            text-decoration: underline;
+        }
+        
+        a + button {
+            background-color: chartreuse;
+        }
+
+        section button:hover {
+            background-color: red;
+        }
+
+        button:hover {
+            background-color: purple;
+        }
+
+        input[type="text"] {
+            color: chocolate;
+        }
+
+        section:nth-of-type(2n) {
+            background-color: aquamarine;
+        }
+
+        input[type="radio"]:checked + label {
+            color: blueviolet;
+        }
+
+        section h2::first-letter {
+            font-size: xx-large;
+        }
+
+        section h2::after {
+            content: '*';
+        }
+
+        section h2::before {
+            content: '*';
         }
 
     </style>
 </head>
 <body>
     <main>
-        <section class="jokes">
+        
             <h1>Kumpulan Joke Bapack<sup>2</sup></h1>
-        </section>
+            <input type="text" placeholder="Username"> 
+            <input type="password" placeholder="password"> <button>Login</button>
+
+            <input type="checkbox">
+            <label for="">Remember me</label>
+
+            <div>
+                <input type="radio" name="jenis kelamin" id="">
+                <label for="jenis kelamin">Laki-Laki</label>
+
+                <input type="radio" name="jenis kelamin" id="">
+                <label for="jenis kelamin">Perempuan</label>
+            </div>
+        
         <hr>
         <section class="jokes">
-            <h2>Udang kalau dari Cirebon namanya udang rebon, kalau dari Inggri? Udang Robin</h2>
+            <h2>Udang kalau dari Cirebon namanya udang rebon, kalau dari Inggris? Udang Robin</h2>
             <div>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum atque culpa rerum enim quae, soluta omnis natus placeat totam, temporibus inventore iste fuga! Alias illum quia a, neque facere itaque!</p>
             </div>
             <p>Dipublish oleh: John</p>
-            <button>Vote +</button>
+            <button>Vote kalau lucu </button>
         </section>
         <hr>
         <section class="jokes">
             <h2>Alat masak apa yang suka kesel? Paan Ciiii...!</h2>
             <p>Dipublish oleh: Riansyah</p>
-            <button>Vote +</button>
+            <button>Vote kalau lucu </button>
         </section>
+
         <hr>
+
         <section class="jokes">
             <h2>Gula, gula apa yang bukan gula merah? Gula Aren't...!</h2>
             <p>Dipublish oleh: John</p>
-            <button>Vote +</button>
+            <button>Vote kalau lucu </button>
         </section>
+
+        <hr>
+
+        <section class="jokes">
+            <h2>Alat masak apa yang suka kesel? Paan Ciiii...!</h2>
+            <p>Dipublish oleh: Riansyah</p>
+            <button>Vote kalau lucu </button>
+        </section>
+
         <hr>
 
         <p>Joke ini semata-mata hanya ingin menghibur diri aja. Bukan untuk kalian!</p>
+        <a href="#">Link contoh</a>
+        <button onclick="window.location.href='index.html'">Kirim</button>
     </main>
 </body>
 </html>
